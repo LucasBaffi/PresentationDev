@@ -6,21 +6,25 @@ class Person {
         this.height = height;
     }
 
-    apresetation() {
+    presetation() {
         console.log(`'Hello, My Name is '${this.name}. I have ${this.age} years and ${this.height} height`);
     }
 
 
 }
 
-class PersonProfession{
+class PersonProfession extends Person {
 
-    constructor(name, age, height, profession){
+    constructor(name, age, height, professional) {
         super(name, age, height);
-        this.profession = profession;
+        this.professional = professional;
 
     }
-    apresetation() {
-        console.log(`'Hello, My Name is '${this.name}. I have ${this.age} years, ${this.height} height and I'am ${this.profession} `);
+    presetation() {
+        console.log(`'Hello, My Name is '${this.name}. I have ${this.age} years, ${this.height} height and I'am ${this.professional} `);
     }
 }
+
+
+const people = new Person('lucas', 29, 170)
+people.presetation()
