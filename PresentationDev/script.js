@@ -28,3 +28,5 @@ class PersonProfession extends Person {
 
 const people = new Person('lucas', 29, 170)
 people.presetation()
+const profession = new PersonProfession('lucas', 29, 170, 'Web development')
+profession.presetation()
