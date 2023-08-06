@@ -51,7 +51,7 @@ class Programador extends Funcionario {
     }
 }
 
-// Atualizando os atributos da classe Funcionario
+
 const funcionario1 = new Funcionario("João", 30, 2000);
 console.log(funcionario1.updateInfo({ nome: "Maria", salario: 2500 })); 
 
